@@ -1,4 +1,10 @@
-
+.main-title{
+font-size:2rem;
+font-weight:900;
+text-transform:uppercase;
+letter-spacing:2px;
+color:white;
+}
 *{
 margin:0;
 padding:0;
@@ -238,4 +244,32 @@ margin-top:15px;
 flex-wrap:wrap;
 }
 
+}
+.contact-btn,
+.whatsapp-btn{
+display:block;
+margin:12px auto;
+padding:14px 20px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+width:90%;
+max-width:300px;
+transition:0.3s;
+}
+
+.contact-btn{
+background:#1b4332;
+color:white;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+}
+
+.contact-btn:hover,
+.whatsapp-btn:hover{
+transform:translateY(-3px);
+opacity:0.9;
 }
