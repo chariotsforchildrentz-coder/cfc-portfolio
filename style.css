@@ -273,3 +273,65 @@ color:white;
 transform:translateY(-3px);
 opacity:0.9;
 }
+/* STORIES OF IMPACT SECTION */
+
+.stories{
+background:white;
+}
+
+.story-card{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-bottom:80px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.story-card img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.story-content h3{
+font-size:2rem;
+margin-bottom:20px;
+color:#1b4332;
+}
+
+.story-content p{
+font-size:1.05rem;
+line-height:1.9;
+margin-bottom:15px;
+}
+
+.reverse img{
+order:2;
+}
+
+.reverse .story-content{
+order:1;
+}
+
+@media(max-width:900px){
+
+.story-card{
+grid-template-columns:1fr;
+}
+
+.reverse img,
+.reverse .story-content{
+order:unset;
+}
+
+.story-card img{
+height:auto;
+}
+
+}
